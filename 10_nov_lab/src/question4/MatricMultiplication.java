@@ -12,7 +12,7 @@ public class MatricMultiplication {
 	      int[][] mThree = new int[3][3];
 	      Scanner sc = new Scanner(System.in);
 	      // taking input in first matrix
-	      System.out.print("Enter 9 Elements of First Matrix: ");
+	      System.out.print("Enter elements of first matrix: ");
 	      for(i=0; i<3; i++)
 	      {
 	         for(j=0; j<3; j++)
@@ -22,7 +22,7 @@ public class MatricMultiplication {
 	      }
 	      
 	   // taking input in second matrix
-	      System.out.print("Enter 9 Elements of Second Matrix: ");
+	      System.out.print("Enter elements of second matrix: ");
 	      for(i=0; i<3; i++)
 	      {
 	         for(j=0; j<3; j++)
