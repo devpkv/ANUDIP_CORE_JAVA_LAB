@@ -7,16 +7,23 @@ public class Menu {
 	public static void main(String[] args) {
 		 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter menu : ");
+		System.out.println("Select menu {1,2,3}: ");
 		
-		int num = sc.nextInt();
+		String str = sc.next();
 		
 		try {
-			
-			if(num >= 1 && num <=3)
-				System.out.println("You choose "+num+" menu");
+			int len = str.length();
+			if(len == 1)
+			{
+				int num = Integer.parseInt(str);
+				if(num >= 1 && num <=3)
+					System.out.println("You choose "+num+" menu");
+				else
+					throw new InputCheckEception("Invalid input");
+			}
 			else
-				throw new InputCheckEception("Invalid input");
+				throw new CharacterCheck("Wrong input");
+			
 		}
 		catch(Exception e)
 		{

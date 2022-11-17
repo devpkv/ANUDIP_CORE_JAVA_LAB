@@ -40,10 +40,15 @@ public class Calculator {
 				switch(ch)
 				{
 					case 1: sum(num1, num2);
+					break;
 					case 2: sub(num1, num2);
+					break;
 					case 3: mul(num1, num2);
+					break;
 					case 4: div(num1, num2);
+					break;
 					case 5: System.exit(0);
+					default : System.out.println("Wrong Input!");
 					
 				}
 			}
