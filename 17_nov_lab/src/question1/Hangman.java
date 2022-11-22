@@ -52,7 +52,7 @@ public class Hangman {
 		setWords(words, len, sc);
 		
 		// STEP 4. Choose a word at random from the list of strings. 
-		char ch = 'y';
+		char ch = 'y'; 
 		// wrong attempts, correct guess attempts
 		int wrong = 0, correct = 0;;
 		
@@ -89,6 +89,7 @@ public class Hangman {
 			// asking user to play again or not;
 			System.out.println("Are you want to continue? (y/n)");
 			ch = sc.next().charAt(0);
+			
 		}while(ch == 'y');
 		 
 		sc.close();

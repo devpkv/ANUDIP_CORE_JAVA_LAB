@@ -12,7 +12,7 @@ public class Menu {
 		String str = sc.next();
 		
 		try {
-			int len = str.length();
+			int len = str.length(); 
 			if(len == 1)
 			{
 				int num = Integer.parseInt(str);
